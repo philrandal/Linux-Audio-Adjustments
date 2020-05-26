@@ -34,18 +34,20 @@ chmod 755 /usr/bin/Sound.sh
 
 border 'Increasing Sound Group Priority'
 
-[[ -f /etc/security/limits.conf ]] && mv /etc/security/limits.conf /etc/security/limits.conf.bak
-echo '#New Limits' > /etc/security/limits.conf
-echo '@audio - rtprio 99' >> /etc/security/limits.conf
-echo '@audio - memlock 512000' >> /etc/security/limits.conf
-echo '@audio - nice -20' >> /etc/security/limits.conf
+cat <<EOF > /etc/security/limits.d/linuxaudioadjustments.conf
+#New Limits
+@audio - rtprio 99
+@audio - memlock 512000
+@audio - nice -20
+EOF
 
 border 'Improving Network Latency'
 
-echo "#New Network Latency" > /etc/sysctl.d/network-latency.conf
-echo 'net.core.rmem_max = 16777216' >> /etc/sysctl.d/network-latency.conf
-echo 'net.core.wmem_max = 16777216' >> /etc/sysctl.d/network-latency.conf
-
+cat <<EOF > /etc/sysctl.d/network-latency.conf
+#New Network Latency
+net.core.rmem_max = 16777216
+net.core.wmem_max = 16777216
+EOF
 
 border 'Creating System Service'
 
