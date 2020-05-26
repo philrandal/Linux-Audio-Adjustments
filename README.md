@@ -1,6 +1,8 @@
-# Linux-Audio
-Debian Based RPi tweaks for improved sound. For TinyCore based systems see [TinyCore Sound Tweaks](https://github.com/dynobot/TinyCore-Sound-Adjustments)
- 
+# linuxaudiotweaks
+Simple tweaks for better sounding audio on Raspberry Pis
+
+Manually forked from https://github.com/brianlight/Linux-Audio-Adjustments
+
  To improve the sound of the Raspberry Pi using Debian and other distributions of Linux several parameters can be adjusted.
  1) Improving the priority of the Audio group
  2) Improving the audio thread priority
@@ -8,7 +10,7 @@ Debian Based RPi tweaks for improved sound. For TinyCore based systems see [Tiny
  4) Improve network latency
  ______________________________________________________________________________________________________________________________
  ## Prerequisites 
- 1) nano file editor; apt install nano
+ 1) nano file editor; sudo apt install nano
  2) Or the ability to use vi editor, your choice.
  
 **Should work on any SBC running Debian based OS, has been tested on:**
@@ -20,22 +22,15 @@ Debian Based RPi tweaks for improved sound. For TinyCore based systems see [Tiny
 - ASUS Tinkerboard
 - Odroid C2
  ______________________________________________________________________________________________________________________________
- ## Automated Install
- curl -sSL https://github.com/dynobot/Linux-Audio-Adjustments/raw/master/basic-install.sh | bash
- 
- ##### Optional method:
- - wget https://github.com/dynobot/Linux-Audio-Adjustments/raw/master/basic-install.sh
+  
+ ### Manual Install:
+ - wget https://github.com/philrandal/linuxaudiotweaks/raw/master/basic-install.sh
  - chmod 755 basic-install.sh
  - sudo ./basic-install.sh
- ## Automated Removal
- curl -sSL https://github.com/dynobot/Linux-Audio-Adjustments/raw/master/remove.sh | bash
- 
- ##### Optional method:
- - wget https://github.com/dynobot/Linux-Audio-Adjustments/raw/master/remove.sh
+  
+ ### Manual Removal:
+ - wget https://github.com/philrandal/linuxaudiotweaks/raw/master/remove.sh
  - chmod 755 remove.sh
  - sudo ./remove.sh
  
  ____________________________________________________________________________________________________________________________
-
-
-
