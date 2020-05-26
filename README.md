@@ -1,4 +1,4 @@
-# linuxaudiotweaks
+# Linux-Audio-Adjustments
 Simple tweaks for better sounding audio on Raspberry Pis
 
  To improve the sound of the Raspberry Pi using Debian and other distributions of Linux several parameters can be adjusted.
