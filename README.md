@@ -24,12 +24,12 @@ Forked from https://github.com/brianlight/Linux-Audio-Adjustments
  ______________________________________________________________________________________________________________________________
   
  ### Manual Install:
- - wget https://github.com/philrandal/linuxaudiotweaks/raw/master/basic-install.sh
+ - wget https://github.com/philrandal/Linux-Audio-Adjustments/raw/master/basic-install.sh
  - chmod 755 basic-install.sh
  - sudo ./basic-install.sh
   
  ### Manual Removal:
- - wget https://github.com/philrandal/linuxaudiotweaks/raw/master/remove.sh
+ - wget https://github.com/philrandal/Linux-Audio-Adjustments/raw/master/remove.sh
  - chmod 755 remove.sh
  - sudo ./remove.sh
  
