@@ -1,7 +1,7 @@
 # linuxaudiotweaks
 Simple tweaks for better sounding audio on Raspberry Pis
 
-Manually forked from https://github.com/brianlight/Linux-Audio-Adjustments
+Forked from https://github.com/brianlight/Linux-Audio-Adjustments
 
  To improve the sound of the Raspberry Pi using Debian and other distributions of Linux several parameters can be adjusted.
  1) Improving the priority of the Audio group
