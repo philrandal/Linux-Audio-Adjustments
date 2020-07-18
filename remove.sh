@@ -15,7 +15,8 @@ border 'Removing Linux Audio Tuning'
 [[ -f /etc/security/limits.d/linuxaudioadjustments.conf ]] && rm /etc/security/limits.d/linuxaudioadjustments.conf
 [[ -f /etc/rc.local ]] && sed -i '\|/usr/bin/Sound.sh|d' /etc/rc.local
 
-sudo rm basic-install.sh
+# leave the install script behind in case we've tweaked it and want to reapply
+#sudo rm basic-install.sh
 
 border 'Rebooting System'
 
