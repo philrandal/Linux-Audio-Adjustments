@@ -13,14 +13,14 @@ border 'Creating Sound File'
 cat <<EOF > /usr/bin/Sound.sh
 #!/bin/bash
 #Reduce Audio thread latency
-chrt -f -p 54 $(pgrep ksoftirqd/0)
-chrt -f -p 54 $(pgrep ksoftirqd/1)
-chrt -f -p 54 $(pgrep ksoftirqd/2)
-chrt -f -p 54 $(pgrep ksoftirqd/3)
+chrt -f -p 54 \$(pgrep ksoftirqd/0)
+chrt -f -p 54 \$(pgrep ksoftirqd/1)
+chrt -f -p 54 \$(pgrep ksoftirqd/2)
+chrt -f -p 54 \$(pgrep ksoftirqd/3)
 
 #Uncomment for MPD Affinity and Priority
-#chrt -f -p 81 $(pidof mpd)
-#taskset -c -p 1 $(pidof mpd)
+#chrt -f -p 81 \$(pidof mpd)
+#taskset -c -p 1 \$(pidof mpd)
 
 #SPDIF HAT and WiFi users Uncomment to turn off power to [Ethernet and USB] ports
 #echo 0x0 > /sys/devices/platform/soc/3f980000.usb/buspower
